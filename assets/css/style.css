@@ -1,0 +1,201 @@
+/* Grundlegende Reset-Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body-Stil */
+body {
+    font-family: "Pangolin", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* Textfarbe */
+}
+.schoolbell-regular {
+    font-family: "Schoolbell", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header-Stil */
+header {
+    background: #427db2; /* Grüner Hintergrund für den Header */
+    color: white; /* Weiße Schriftfarbe */
+    padding: 5px 20px; /* Innenabstand */
+    display: flex; /* Flexbox für Layout */
+    justify-content: space-between; /* Abstand zwischen Logo und Navigation */
+    align-items: center; /* Vertikale Ausrichtung */
+}
+
+.logo img {
+    max-width: 100%;
+    height: 50px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none; /* Keine Aufzählungszeichen */
+    display: flex; /* Flexbox für horizontale Anordnung */
+}
+
+nav ul li {
+    margin-left: 30px; /* Abstand zwischen den Navigationselementen */
+}
+
+nav ul li a {
+    color: white; /* Weiße Schriftfarbe für Links */
+    text-decoration: none; /* Keine Unterstreichung */
+}
+
+nav ul li a:hover {
+    color: #DFD035; /* Gelbe Farbe beim Hover */
+}
+
+
+.hero {
+    display: flex; /* Flexbox für Layout */
+    background-image: url('../images/clothes_background.jpg');
+    align-items: center; /* Vertikale Ausrichtung */
+    justify-content: flex-start; /* Text links ausrichten */
+    height: 80vh; /* Feste Höhe für den Hero-Bereich */
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.hero-text {
+    margin-left: 40px;
+    line-height: 1.6;
+    width: 45%;
+    padding: 0 10px 20px 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    margin-bottom: 5px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.btn {
+    background: #DFD035;
+    color: white; /* Weiße Schriftfarbe */
+    padding: 10px 20px; /* Innenabstand */
+    text-decoration: none; /* Keine Unterstreichung */
+    border-radius: 5px; /* Abgerundete Ecken */
+}
+
+/* Abschnitts-Stile */
+section {
+    padding: 40px 20px; /* Innenabstand für Abschnitte */
+    background: #427db2;
+    margin: 0px 0; /* Abstand zwischen Abschnitten */
+}
+
+/* Footer-Stil */
+footer {
+    text-align: center; /* Zentrierter Text */
+    padding: 20px; /* Innenabstand */
+    background: #427db2;
+    color: white; /* Weiße Schriftfarbe */
+}
+
+footer a {
+    color: white; /* Weiße Schriftfarbe für Links im Footer */
+    text-decoration: none; /* Keine Unterstreichung */
+    margin: 0 10px; /* Abstand zwischen Links */
+}
+/* Vorhandene Stile ... */
+
+/* Neue Stile für den Kontaktbereich */
+.contact-info {
+    display: flex; /* Flexbox aktivieren */
+    flex-wrap: wrap; /* Zeilenumbruch erlauben, wenn der Platz nicht ausreicht */
+    justify-content: center; /* Zentriert die Elemente */
+    margin: 20px 0; /* Abstand oben und unten */
+}
+
+.contact-info div {
+    margin: 10px 20px; /* Abstand zwischen den einzelnen Kontaktinformationen */
+    text-align: center; /* Zentrierter Text */
+}
+
+/* Der Play-Button wird in der Mitte des Containers platziert */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none; /* Der Button wird zunächst versteckt */
+}
+
+/* Container für Text und Video */
+.sustainability {
+    display: flex;
+    align-items: center; /* Vertikal zentrieren */
+    justify-content: space-between; /* Platz zwischen Text und Video */
+    padding: 40px;
+    gap: 20px; /* Abstand zwischen den Elementen */
+    flex-wrap: wrap; /* Falls der Bildschirm zu klein ist, werden Elemente umgebrochen */
+}
+
+/* Linker Bereich mit Text */
+.text-container {
+    width: 50%;
+    min-width: 300px;
+    margin-top: -100px;
+    color: white;
+}
+
+/* Rechter Bereich mit Video */
+.video-container {
+    position: relative;
+    width: 50%; /* Video kleiner halten */
+    max-width: 600px; /* Maximale Breite, damit es nicht zu groß wird */
+    margin-right: 50px;
+}
+
+/* Video selbst */
+video {
+    width: 100%; /* Passt sich dem Container an */
+    height: auto; /* Proportionen beibehalten */
+    border-radius: 10px; /* Optional: Abgerundete Ecken */
+}
+
+/* Play-Button in der Mitte des Videos */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
+
+
+
